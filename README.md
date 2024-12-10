@@ -1,4 +1,4 @@
-# Lab 3: Wall Following
+# Lab 4: Wall Following
 
 ## I. Learning Goals
 
