@@ -237,19 +237,35 @@ graphically look like this:
 
 ![](img/riemann-sums.png)
 
-Applying this to our context, we can take a running sum representing our
-integral value. For each laser scan we get, we can add the product of the
-error value (height) and the amount of time passed from the last laser scan
-(width).
+Applying this to our context, we can take a running sum of each error value
+calculated:
+
+$$
+\int_{0}^{t}e(t^{\prime})dt^{\prime} \approx \sum _{t^\prime = 0}^t e(t^{\prime})
+$$
+
+(The width of each rectangle is $1$, since we are working in units of time
+steps)
 
 For the derivative, we can take the finite difference approximation (using two
 points), which graphically looks like:
 
 ![](img/finite-difference.png)
 
-In our context, for each laser scan we get, we can simply calculate the slope
-between the error value from our last scan, and the error value of the current
-scan.
+The formula for the slope is:
+
+$$
+\frac{d}{dt}(e(t)) \approx \frac{e(t_2) - e(t_1)}{t_2 - t_1}
+$$
+
+In our context, we calculate this using the error value derived from one laser
+scan message and comparing it against the previous message, resulting in:
+
+$$
+\frac{d}{dt}(e(t)) \approx e(t) - e(t-1)
+$$
+
+(Again, since we are working in time steps, $t_2-t_1$ is simply $1$.)
 
 ### 2-3: The Trap
 
