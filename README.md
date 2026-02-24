@@ -183,7 +183,7 @@ Your package must contain a launch file which accepts:
 Below is an example launch command:
 
 ```
-ros2 launch wall_follow wall_follow_launch.py speed_max:=2.0
+ros2 launch wall_follow wall_follow_launch.py speed_max:=2.0 \
     distance_setpoint:=1.0 kp:=1.0 ki:=0.01 kd:=0.1
 ```
 
