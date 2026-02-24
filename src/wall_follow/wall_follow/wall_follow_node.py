@@ -30,9 +30,7 @@ class WallFollow(Node):
 
         # TODO: Initialize attributes related to PID
         # self.integral =
-        # self.error =
         # self.prev_error =
-        # self.prev_time =
 
         self.get_logger().info("Initialized.")
 
