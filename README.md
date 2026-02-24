@@ -187,6 +187,9 @@ ros2 launch wall_follow wall_follow_launch.py speed_max:=2.0 \
     distance_setpoint:=1.0 kp:=1.0 ki:=0.01 kd:=0.1
 ```
 
+You may declare any additional arguments, if needed. (For example, you can have
+a parameter for lookahead.)
+
 #### Simulator Demonstration
 
 With the gym running, demonstrate that your car can drive **one lap** around
