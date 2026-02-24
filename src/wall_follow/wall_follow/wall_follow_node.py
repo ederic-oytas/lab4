@@ -89,7 +89,6 @@ class WallFollow(Node):
 
         # TODO: Calculate error
         # TODO: Use PID formula and derive steering_angle
-        # TODO: Update PID-related attributes
         # TODO: Calculate speed
         # TODO: Publish drive message
 
